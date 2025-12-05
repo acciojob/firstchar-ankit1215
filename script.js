@@ -1,8 +1,10 @@
 function firstChar(text) {
-  // your code here
+  // Trim leading spaces and return the first character if it exists
+  text = text.trimStart();
+
+  return text.length > 0 ? text[0] : "";
 }
 
 // Do not change the code below
-//Uncomment the following line to show the prompt popup
-//const text = prompt("Enter text:");
+// const text = prompt("Enter text:");
 alert(firstChar(text));
